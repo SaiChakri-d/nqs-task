@@ -1,0 +1,110 @@
+%base-display {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+}
+
+%base-padding{
+  padding: 1rem 0 1rem 0;
+}
+
+.wrapper-content {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.adbar {
+  @extend %base-display;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem 0 1rem;
+  border: 1px solid #dadeeb;
+  margin-left: 2.75%;
+}
+
+.adbar-title {
+  font-size: 1.5rem;
+  text-align: start;
+  padding: 0 0 0.5rem 0;
+  margin-top: 4%;
+  margin-left: 13.25%;
+  border: none;
+}
+
+.adbar-subtitle {
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.adbar-dropdown {
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.adbar-menu {
+  @extend %base-display;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  // margin-left: 12.5%;
+}
+
+.date-selection {
+  @extend %base-display;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid lightgrey;
+  padding: 0.4rem;
+}
+
+.time-zone {
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: end;
+}
+
+.dashboard-chart {
+  min-height: 20vh;
+  @extend %base-padding;
+  display: flex;
+  margin-left: auto;
+  flex-wrap: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f3f5fa;
+}
+
+.dashboard-table {
+  @extend %base-display;
+  @extend %base-padding;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f3f5fa;
+}
+
+.chart-background {
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.table-header {
+  padding: 0rem 0 1.5rem 2rem;
+  font-weight: bold;
+  font-size: large;
+
+}
+
+.card-header {
+  background-color: #eeecec;
+  padding: 0.5rem 0 0.5rem 1rem;
+  font-weight: bold;
+}
+
+input[type="date"] {
+  border: 1px solid lightgrey;
+  position: relative;
+}
